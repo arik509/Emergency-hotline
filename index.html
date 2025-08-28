@@ -5,11 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Hotline</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
+<body class="roboto">
     <header>
         <div class="px-[0px] lg:px-[60px] py-[24px] flex justify-between">
             <div class="flex items-center gap-[10px]">
@@ -17,20 +22,29 @@
                 <h1 class="text-[#006747] text-[14px] lg:text-[18px] font-extrabold">Emergency <br>Service</h1>
             </div>
             <div class="flex gap-2 lg:gap-[20px]">
-                <div class="bg-[#41ff6b1a] p-[12px] rounded-[20px] lg:rounded-[50px] flex justify-center items-center gap-[10px] w-[60px] lg:w-[120px]">
+                <div
+                    class="bg-[#41ff6b1a] p-[12px] rounded-[20px] lg:rounded-[50px] flex justify-center items-center gap-[10px] w-[60px] lg:w-[120px]">
                     <p>0</p>
                     <img class="h-[15px] lg:h-[30px] w-[15px] lg:w-[30px]" src="assets/heart.png" alt="">
                 </div>
-                <div class="bg-[#41ff6b1a] p-[12px] rounded-[20px] lg:rounded-[50px] flex justify-center items-center gap-[10px] w-[60px] lg:w-[120px]">
+                <div
+                    class="bg-[#41ff6b1a] p-[12px] rounded-[20px] lg:rounded-[50px] flex justify-center items-center gap-[10px] w-[60px] lg:w-[120px]">
                     <p>100</p>
                     <img class="h-[15px] lg:h-[30px] w-[15px] lg:w-[30px]" src="assets/coin.png" alt="">
                 </div>
-                <div class="bg-[#00a63e] p-[5px] lg:p-[12px] rounded-[20px] lg:rounded-[50px] flex justify-center items-center gap-[10px] w-[80px] lg:w-[120px]">
+                <div
+                    class="bg-[#00a63e] p-[5px] lg:p-[12px] rounded-[20px] lg:rounded-[50px] flex justify-center items-center gap-[10px] w-[80px] lg:w-[120px]">
                     <p class="text-[14px] lg:text-[16px] font-normal lg:font-bold text-white">0 Copy</p>
                 </div>
             </div>
         </div>
     </header>
+    <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col gap-[10px] justify-center items-center py-[12px] px-[60px]">
+        <img class="w-[92px] h-[92px]" src="assets/logo-dark.png" alt="">
+            <h1 class="text-white text-[20px] lg:text-[32px] font-semibold">জরুরি সেবা ডিরেক্টরি</h1>
+            <p class="text-[14px] lg:text-[18px] text-center text-white">Government Emergency Services at Your Fingertip – A Project by Government
+                of the People’s Republic of Bangladesh</p>
+    </div>
 </body>
 
 </html>
