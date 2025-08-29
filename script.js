@@ -12,6 +12,7 @@ for (const heart of hearts) {
     })
 }
 
+
 let coinCount = parseInt(document.getElementById('coin-count').innerText);
 
 document.getElementById('national-emergency-call-button').addEventListener('click', function () {
@@ -54,6 +55,16 @@ document.getElementById('national-emergency-call-button').addEventListener('clic
 
         historyContainer.appendChild(div)
     }
+})
+
+document.getElementById('national-emergency-copy-button').addEventListener('click', function () {
+    let copyCount = parseInt(document.getElementById('copy-count').innerText)
+
+    navigator.clipboard.writeText('999').then(() => alert('Copied: 999'))
+
+    copyCount = copyCount + 1;
+
+    document.getElementById('copy-count').innerText = copyCount;
 
 })
 
@@ -99,6 +110,17 @@ document.getElementById('police-calling-button').addEventListener('click', funct
     }
 })
 
+document.getElementById('police-copy-button').addEventListener('click',function(){
+    let copyCount = parseInt(document.getElementById('copy-count').innerText)
+
+    navigator.clipboard.writeText('999').then(() => alert('Copied: 999'))
+
+    copyCount = copyCount + 1;
+
+    document.getElementById('copy-count').innerText = copyCount;
+      
+})
+
 
 document.getElementById('fire-service-calling-button').addEventListener('click', function () {
     if (coinCount < 20) {
@@ -139,6 +161,17 @@ document.getElementById('fire-service-calling-button').addEventListener('click',
 
         historyContainer.appendChild(div)
     }
+})
+
+document.getElementById('fire-copy').addEventListener('click',function(){
+    let copyCount = parseInt(document.getElementById('copy-count').innerText)
+
+    navigator.clipboard.writeText('999').then(() => alert('Copied: 999'))
+
+    copyCount = copyCount + 1;
+
+    document.getElementById('copy-count').innerText = copyCount;
+      
 })
 
 document.getElementById('ambulance-calling-button').addEventListener('click', function () {
@@ -183,6 +216,17 @@ document.getElementById('ambulance-calling-button').addEventListener('click', fu
     }
 })
 
+document.getElementById('ambulance-copy').addEventListener('click',function(){
+    let copyCount = parseInt(document.getElementById('copy-count').innerText)
+
+    navigator.clipboard.writeText('1994-999999').then(() => alert('Copied: 1994-999999'))
+
+    copyCount = copyCount + 1;
+
+    document.getElementById('copy-count').innerText = copyCount;
+      
+})
+
 
 document.getElementById('woman-help-button').addEventListener('click', function () {
     if (coinCount < 20) {
@@ -225,6 +269,17 @@ document.getElementById('woman-help-button').addEventListener('click', function 
     }
 })
 
+document.getElementById('women-copy').addEventListener('click',function(){
+    let copyCount = parseInt(document.getElementById('copy-count').innerText)
+
+    navigator.clipboard.writeText('109').then(() => alert('Copied: 109'))
+
+    copyCount = copyCount + 1;
+
+    document.getElementById('copy-count').innerText = copyCount;
+      
+})
+
 
 document.getElementById('dudok-button').addEventListener('click', function () {
     if (coinCount < 20) {
@@ -265,6 +320,17 @@ document.getElementById('dudok-button').addEventListener('click', function () {
 
         historyContainer.appendChild(div)
     }
+})
+
+document.getElementById('dudok-copy').addEventListener('click',function(){
+    let copyCount = parseInt(document.getElementById('copy-count').innerText)
+
+    navigator.clipboard.writeText('106').then(() => alert('Copied: 106'))
+
+    copyCount = copyCount + 1;
+
+    document.getElementById('copy-count').innerText = copyCount;
+      
 })
 
 
@@ -310,6 +376,17 @@ document.getElementById('current-button').addEventListener('click', function () 
     }
 })
 
+document.getElementById('current-copy').addEventListener('click',function(){
+    let copyCount = parseInt(document.getElementById('copy-count').innerText)
+
+    navigator.clipboard.writeText('16216').then(() => alert('Copied: 16216'))
+
+    copyCount = copyCount + 1;
+
+    document.getElementById('copy-count').innerText = copyCount;
+      
+})
+
 document.getElementById('brac-button').addEventListener('click', function () {
 
     if (coinCount < 20) {
@@ -352,6 +429,16 @@ document.getElementById('brac-button').addEventListener('click', function () {
     }
 })
 
+document.getElementById('brac-copy').addEventListener('click',function(){
+    let copyCount = parseInt(document.getElementById('copy-count').innerText)
+
+    navigator.clipboard.writeText('16445').then(() => alert('Copied: 16445'))
+
+    copyCount = copyCount + 1;
+
+    document.getElementById('copy-count').innerText = copyCount;
+      
+})
 
 document.getElementById('rail-button').addEventListener('click', function () {
 
@@ -395,9 +482,21 @@ document.getElementById('rail-button').addEventListener('click', function () {
     }
 })
 
-document.getElementById('clear-btn').addEventListener('click',function(){
+document.getElementById('rail-copy').addEventListener('click',function(){
+    let copyCount = parseInt(document.getElementById('copy-count').innerText)
+
+    navigator.clipboard.writeText('163').then(() => alert('Copied: 163'))
+
+    copyCount = copyCount + 1;
+
+    document.getElementById('copy-count').innerText = copyCount;
+      
+})
+
+document.getElementById('clear-btn').addEventListener('click', function () {
     const historyContainer = document.getElementById('history-container')
-    historyContainer.innerText = ""
+    historyContainer.innerText = "";
+    historyData.length = 0;
 })
 
 
